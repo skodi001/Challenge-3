@@ -1,0 +1,279 @@
+body {
+  background-color: #e8eae6;
+}
+
+.general-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.big-box {
+  flex-direction: row;
+}
+
+.first-two {
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.daniel-div {
+  background-color: #6155a6;
+  font-style: normal;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 13px;
+  font-style: arial;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin-right: 15px;
+  border-radius: 9px;
+}
+
+.daniel-image {
+  float: left;
+  position: relative;
+  margin-right: 15px;
+  margin-top: 13px;
+}
+
+.daniel-h3 {
+  margin-bottom: 0;
+  color: #cdd0cb;
+}
+
+.daniel-ver {
+  margin-top: 0;
+  color: #cdd0cb;
+}
+
+.daniel-words {
+  font-size: 1.7em;
+  color: white;
+}
+
+.daniel-addinfo {
+  font-size: 0.8em;
+  color: #cdd0cb;
+  padding-bottom: 15px;
+}
+
+.jonathan-div {
+  background-color: #374045;
+  font-style: normal;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  border-radius: 9px;
+}
+
+.jonathan-image {
+  float: left;
+  position: relative;
+  margin-right: 15px;
+  margin-top: 13px;
+}
+
+.jonathan-h3 {
+  margin-bottom: 0;
+  color: #cdd0cb;
+}
+
+.jonathan-ver {
+  margin-top: 0;
+  color: #cdd0cb;
+}
+
+.jonathan-words {
+  font-size: 1.7em;
+  color: white;
+}
+
+.jonathan-addinfo {
+  font-size: 0.8em;
+  color: #cdd0cb;
+  padding-bottom: 15px;
+}
+
+.jeanette-div {
+  background-color: white;
+  font-style: normal;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin-right: 15px;
+  border-radius: 9px;
+}
+
+.jeanette-image {
+  float: left;
+  position: relative;
+  margin-right: 15px;
+  margin-top: 13px;
+}
+
+.jeanette-h3 {
+  margin-bottom: 0;
+  color: #2c061f;
+}
+
+.jeanetter-ver {
+  margin-top: 0;
+}
+
+.jeanetter-words {
+  font-size: 1.7em;
+  color: #222831;
+}
+
+.jeanette-addinfo {
+  font-size: 0.8em;
+  color: #23120b;
+  padding-bottom: 15px;
+}
+
+.patrick-div {
+  background-color: #222831;
+  font-style: normal;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  border-radius: 9px;
+}
+
+.patrick-image {
+  float: left;
+  position: relative;
+  margin-right: 15px;
+  margin-top: 13px;
+}
+
+.patrick-h3 {
+  margin-bottom: 0;
+  color: #cdd0cb;
+}
+
+.patrick-ver {
+  margin-top: 0;
+  color: #cdd0cb;
+}
+
+.patrick-words {
+  font-size: 1.7em;
+  color: white;
+}
+
+.patrick-addinfo {
+  font-size: 0.8em;
+  color: #cdd0cb;
+}
+
+.kira-div {
+  background-color: white;
+  font-style: normal;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin-right: 15px;
+  border-radius: 9px;
+}
+
+.kira-image {
+  float: left;
+  position: relative;
+  margin-right: 15px;
+  margin-top: 13px;
+}
+
+.kira-h3 {
+  margin-bottom: 0;
+  color: #2c061f;
+}
+
+.kira-ver {
+  margin-top: 0;
+}
+
+.kira-words {
+  font-size: 1.7em;
+  color: #222831;
+}
+
+.kira-addinfo {
+  font-size: 0.8em;
+  color: #23120b;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 375px) {
+  .daniel-div {
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .jonathan-div {
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .jeanette-div {
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .patrick-div {
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .kira-div {
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1440px) {
+  .daniel-div {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .jonathan-div {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .jeanette-div {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .patrick-div {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .kira-div {
+    padding: 15px;
+    margin: 15px;
+  }
+}
