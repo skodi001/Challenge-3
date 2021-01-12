@@ -1,23 +1,20 @@
 body {
   background-color: #e8eae6;
-}
+  text-align: center;
 
-.general-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .big-box {
-  flex-direction: row;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "daniel-div daniel-div jonathan-div kira-div"
+    "jeanette-div patrick-div patrick-div kira-div";
+  grid-gap: 0.5em;
+  text-align: center;
 }
 
-.first-two {
-  display: inline-block;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
 .daniel-div {
   background-color: #6155a6;
@@ -27,8 +24,8 @@ body {
   padding-top: 13px;
   font-style: arial;
   font-family: 'Barlow Semi Condensed', sans-serif;
-  margin-right: 15px;
   border-radius: 9px;
+  grid-area: daniel-div;
 }
 
 .daniel-image {
@@ -68,6 +65,7 @@ body {
   padding-bottom: 15px;
   font-family: 'Barlow Semi Condensed', sans-serif;
   border-radius: 9px;
+  grid-area: jonathan-div;
 }
 
 .jonathan-image {
@@ -106,8 +104,8 @@ body {
   padding-top: 13px;
   padding-bottom: 15px;
   font-family: 'Barlow Semi Condensed', sans-serif;
-  margin-right: 15px;
   border-radius: 9px;
+  grid-area: jeanette-div;
 }
 
 .jeanette-image {
@@ -146,6 +144,7 @@ body {
   padding-bottom: 15px;
   font-family: 'Barlow Semi Condensed', sans-serif;
   border-radius: 9px;
+  grid-area: patrick-div;
 }
 
 .patrick-image {
@@ -185,6 +184,7 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   margin-right: 15px;
   border-radius: 9px;
+  grid-area: kira-div;
 }
 
 .kira-image {
@@ -214,66 +214,14 @@ body {
   padding-bottom: 15px;
 }
 
-@media (min-width: 375px) {
-  .daniel-div {
-    padding: 5px;
-    margin: 0px;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .jonathan-div {
-    padding: 10px;
-    margin: 0px;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .jeanette-div {
-    padding: 10px;
-    margin: 0px;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .patrick-div {
-    padding: 10px;
-    margin: 0px;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .kira-div {
-    padding: 10px;
-    margin: 0px;
-    text-align: center;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 1440px) {
-  .daniel-div {
-    padding: 15px;
-    margin: 15px;
-  }
-
-  .jonathan-div {
-    padding: 15px;
-    margin: 15px;
-  }
-
-  .jeanette-div {
-    padding: 15px;
-    margin: 15px;
-  }
-
-  .patrick-div {
-    padding: 15px;
-    margin: 15px;
-  }
-
-  .kira-div {
-    padding: 15px;
-    margin: 15px;
+@media only screen and (max-width: 375px) {
+  .big-box {
+    grid-template-columns: 0.8fr;
+    grid-template-rows: 0.8fr 0.3fr 0.3fr 0.6fr 0.8fr;
+    grid-template-areas: "daniel-div"
+      "jonathan-div"
+      "jeanette-div"
+      "patrick-div"
+      "kira-div";
   }
 }
